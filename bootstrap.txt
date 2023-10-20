@@ -1,0 +1,53 @@
+Bootstrap 5 & CSS Grid
+
+framework: Prebuilt collection of tools, libraries, guidelines, and best practices 
+    organized in a structured and cohesive manner to help developers build and maintain complex 
+    applications more efficiently.
+
+Bootstrap: is a front-end framework that simplifies the process of front-end web development by providing 
+    a foundation that developers can build upon, speeding up the creation of responsive and visually appealing 
+    websites and web applications.
+
+Bootstrap's main selling point is the responsive grid system built into the framework when using Bootstrap we only have to
+worry about 6 breakpoints
+
+    Media Query: A CSS tool that can be used to modify websites on a device depending on screen size
+        Syntax: When screen is at or above 576 px
+        @media(min-width:576){
+            display:block;
+            margin:0 auto;
+            max-width:100%;
+            height: 100vh;
+        }
+
+Bootstrap's grid tier system is how we use media queries. Built using flexbox and has 3 specific parts.
+    
+    Containers: Responsive class that helps center and horizontally pad the content of your site
+
+    Rows: Rows are basic wrappers for the final portion of the system - columns. They spread across the entire
+        width of the page. for a total of 12 possible spaces(similar to a block level element).
+
+    Columns: Columns are the most flexible portion of the tiered Bootstrap grid system. They fill the in the rows
+        horizontally until all available space is taken up. Up to 12 spots total.
+
+    Syntax example:
+
+    <div class="container">
+        <div class="row">
+            <div class"col">First</div>
+            <div class"col">Second</div>
+            <div class"col">Third</div>
+            <div class"col">Fourth</div>
+        <div/>
+        <div class="row">
+            <div class="col-8">co1-8</div>
+            <div class="col-4">co1-4</div>
+        <div/>
+    <div/>
+
+    Tips: 
+        .container
+            .row
+                .col*3
+        cmd + shift + l = grabs all highlighted objects
+        option + shift + up/down = copy line up/down
